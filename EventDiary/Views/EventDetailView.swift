@@ -223,7 +223,7 @@ struct EventDetailIncompletePage : View {
     var body: some View {
         EventDetailsHeader(eventItem: eventItem,
                            eventItemIndex: eventItemIndex,
-                           thumbnailTitle: eventItem.title)
+                           thumbnailTitle: eventItem.title ?? "")
         
         Image(systemName: "photo")
             .scaledToFit()
@@ -233,7 +233,7 @@ struct EventDetailIncompletePage : View {
             .background(Color.black)
             .opacity(0.2)
         
-        EventDetailsDescription(thumbnailDescription: eventItem.description)
+        EventDetailsDescription(thumbnailDescription: eventItem.description ?? "")
 
         EventDetailsToDoList(eventItem: eventItem,
                              eventItemIndex: eventItemIndex)

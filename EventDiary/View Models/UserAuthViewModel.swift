@@ -110,7 +110,7 @@ class UserAuthViewModel : ObservableObject {
                     
                                         self.eventListViewModel.eventItems.sort {
                                             // Alphabetical order
-                                            $0.title < $1.title
+                                            $0.title ?? "" < $1.title ?? ""
                                         }
                                         self.signedIn = self.isSignedIn
                                     })

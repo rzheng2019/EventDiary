@@ -24,8 +24,8 @@ struct EditEventDetailView: View {
     @State var checkList : [CheckListItemModel]
     
     init(eventItem: EventItemModel, eventItemIndex: Int) {
-        self._description = State(initialValue: eventItem.description)
-        self._title = State(initialValue: eventItem.title)
+        self._description = State(initialValue: eventItem.description ?? "")
+        self._title = State(initialValue: eventItem.title ?? "")
         self.eventItem = eventItem
         self.eventItemIndex = eventItemIndex
         
@@ -74,8 +74,8 @@ struct EditEventDetailView: View {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             userAuthViewModel.eventListViewModel.updateEventListItem(eventItemIndex: eventItemIndex,
                                                                      photo: userAuthViewModel.eventListViewModel.eventItems[eventItemIndex].photo,
-                                                                     title: userAuthViewModel.eventListViewModel.eventItems[eventItemIndex].title,
-                                                                     description: userAuthViewModel.eventListViewModel.eventItems[eventItemIndex].description,
+                                                                     title: userAuthViewModel.eventListViewModel.eventItems[eventItemIndex].title ?? "",
+                                                                     description: userAuthViewModel.eventListViewModel.eventItems[eventItemIndex].description ?? "",
                                                                      checkList: userAuthViewModel.eventListViewModel.eventItems[eventItemIndex].checkListItems)
             
             userAuthViewModel.objectWillChange.send()

@@ -48,7 +48,7 @@ struct EventListRowView: View {
                             .fontWeight(.bold)
                     }
                     else {
-                        Text(eventItem.title)
+                        Text(eventItem.title ?? "")
                             .font(.headline)
                             .lineLimit(2)
                             .fontWeight(.bold)
@@ -61,7 +61,7 @@ struct EventListRowView: View {
                             .lineLimit(2)
                     }
                     else {
-                        Text(eventItem.description)
+                        Text(eventItem.description ?? "")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                             .lineLimit(2)

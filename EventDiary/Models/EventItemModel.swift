@@ -14,8 +14,8 @@ struct EventItemModel: Identifiable {
     // Data for Title, Photo, Description
     var id: String
     var photo: UIImage?
-    var title: String
-    var description: String
+    var title: String?
+    var description: String?
     // Checklist
     var checkListItems : [CheckListItemModel]
     
