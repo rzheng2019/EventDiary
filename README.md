@@ -3,7 +3,7 @@
 ## Description
 
 Event Diary is a native iOS application that lets users create and log any events they have experienced. 
-Users can add photos, descriptions, and even tasks they have or would like the accomplish. 
+Users can add photos, descriptions, and even tasks they have or would like to accomplish. 
 
 ![](https://github.com/rzheng2019/EventDiary/blob/main/EventDiaryGif.gif)
 
