@@ -6,6 +6,8 @@ Event Diary is a native iOS application that lets users create and log any event
 Users can add photos, descriptions, and even tasks they have or would like the accomplish. 
 Firebase Authentication and Firestore are used to save and store data.  
 
+![](https://github.com/rzheng2019/EventDiary/blob/main/EventDiaryGif.gif)
+
 ## Getting Started
 
 1. Make sure to have XCode Version 14.3.1 or above installed on your computer.
