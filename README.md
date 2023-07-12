@@ -23,6 +23,6 @@ Users can add photos, descriptions, and even tasks they have or would like the a
 
 ## Structure
 
-- "Models": Files that cointain the models for what a event item and check list item consists of.
+- "Models": Files that contain the models for what a event item and check list item consists of.
 - "View Models": Files that contain the view models that provide data and functionality to be used by views.
 - "Views": Files that use view models to display user interface with data.
